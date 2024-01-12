@@ -3,15 +3,15 @@ files:
   - name: main.py
     visible: true
     placeholders:
-      - offset: 418
-        length: 89
+      - offset: 512
+        length: 84
         placeholder_text: "...  # TODO метод должен возвращать строку, которая содержи\
       т человеко-читаемую информацию"
         initial_state:
           length: 89
           offset: 418
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Unchecked
         encrypted_possible_answer: "...  # TODO метод должен возвращать строку, котора\
       я содержит человеко-читаемую информацию"
