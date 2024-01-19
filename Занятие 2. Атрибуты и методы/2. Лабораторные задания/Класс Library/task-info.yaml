@@ -13,7 +13,7 @@ files:
   - name: main.py
     visible: true
     placeholders:
-      - offset: 188
+      - offset: 217
         length: 26
         placeholder_text: '# TODO написать класс Book'
         dependency:
@@ -32,14 +32,14 @@ files:
         encrypted_possible_answer: |-
           class Book:
               ...
-      - offset: 217
-        length: 29
+      - offset: 536
+        length: 135
         placeholder_text: '# TODO написать класс Library'
         initial_state:
           length: 29
           offset: 217
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Unchecked
         encrypted_possible_answer: |-
           class Library:

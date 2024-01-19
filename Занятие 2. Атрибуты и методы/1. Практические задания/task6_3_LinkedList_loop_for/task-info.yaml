@@ -10,20 +10,20 @@ files:
           length: 49
           offset: 183
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
         encrypted_possible_answer: "# TODO атрибут, хранящий длину последовательности"
-      - offset: 613
-        length: 45
+      - offset: 674
+        length: 123
         placeholder_text: '# TODO устанавливаем длину последовательности'
         initial_state:
           length: 45
           offset: 613
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
         encrypted_possible_answer: '# TODO устанавливаем длину последовательности'
-      - offset: 1487
+      - offset: 1626
         length: 43
         placeholder_text: '# TODO проверка корректности границ индекса'
         initial_state:
@@ -31,9 +31,9 @@ files:
           offset: 1487
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Failed
         encrypted_possible_answer: '# TODO проверка корректности границ индекса'
-      - offset: 2023
+      - offset: 2162
         length: 77
         placeholder_text: '# TODO с помощью цикла for распечатать в столбик все значения
       связного списка'
@@ -42,7 +42,7 @@ files:
           offset: 2023
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Failed
         encrypted_possible_answer: '# TODO с помощью цикла for распечатать в столбик все
       значения связного списка'
     text: |
@@ -162,5 +162,8 @@ files:
               self.is_valid(next_)
               self.next = next_
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Syntax Error
+  time: "Fri, 19 Jan 2024 16:26:34 UTC"
 record: -1

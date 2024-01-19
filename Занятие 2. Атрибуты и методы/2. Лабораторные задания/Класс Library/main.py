@@ -1,3 +1,5 @@
+from typing import Optional
+
 BOOKS_DATABASE = [
     {
         "id": 1,
@@ -13,9 +15,36 @@ BOOKS_DATABASE = [
 
 
 # TODO написать класс Book
+class Book:
+    def __init__(self, id_, name, pages):
+        self.id = id_
+        self.name = name
+        self.pages = pages
 
+    def __str__(self):
+        return f"Книга {self.name}"
+
+    def __repr__(self):
+        return f"Book(id_={self.id}, name='{self.name}', pages={self.pages})"
 
 # TODO написать класс Library
+class Library:
+    def __init__(self, books: Optional = None):
+        self.books: Optional[Book] = None
+
+
+    def get_next_book_id(self):
+        if self.books is None:
+            id_ = 1
+        else:
+            id_ += 1
+        return id_
+
+
+    def get_index_by_book_id(self):
+        if
+        return id_
+
 
 
 if __name__ == '__main__':

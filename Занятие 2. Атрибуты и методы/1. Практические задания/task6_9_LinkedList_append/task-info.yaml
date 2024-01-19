@@ -4,16 +4,16 @@ files:
     visible: true
     placeholders:
       - offset: 246
-        length: 43
+        length: 89
         placeholder_text: "...  # TODO инициализировать связный список"
         initial_state:
           length: 43
           offset: 246
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: "...  # TODO инициализировать связный список"
-      - offset: 1481
+      - offset: 1527
         length: 75
         placeholder_text: "...  # TODO реализовать алгоритм добавления узла в конец по\
       следовательности"
@@ -22,7 +22,7 @@ files:
           offset: 1481
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: "...  # TODO реализовать алгоритм добавления узла в\
       \ конец последовательности"
     text: |
@@ -132,5 +132,8 @@ files:
               self.is_valid(next_)
               self.next = next_
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 19 Jan 2024 16:43:12 UTC"
 record: -1
