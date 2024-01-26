@@ -48,7 +48,7 @@ files:
         selected: false
         status: Unchecked
         encrypted_possible_answer: "...  # TODO инициализировать второй узел"
-      - offset: 675
+      - offset: 677
         length: 78
         placeholder_text: "...  # TODO через атрибут экземпляра устанавливаем первому\
       \ узлу следующий узел"

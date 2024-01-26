@@ -39,7 +39,7 @@ files:
           # TODO метод проверки корректности связываемого узла
                   ...
       - offset: 739
-        length: 98
+        length: 100
         placeholder_text: |-
           # TODO метод должен проверять корректность узла и устанавливать значение атрибуту next
                   ...
@@ -52,7 +52,7 @@ files:
         encrypted_possible_answer: |-
           # TODO метод должен проверять корректность узла и устанавливать значение атрибуту next
                   ...
-      - offset: 871
+      - offset: 873
         length: 50
         placeholder_text: '# TODO инициализируйте два узла с любыми значеними'
         initial_state:
@@ -62,7 +62,7 @@ files:
         selected: false
         status: Unchecked
         encrypted_possible_answer: '# TODO инициализируйте два узла с любыми значеними'
-      - offset: 927
+      - offset: 929
         length: 36
         placeholder_text: '# TODO свяжите первый узел со вторым'
         initial_state:

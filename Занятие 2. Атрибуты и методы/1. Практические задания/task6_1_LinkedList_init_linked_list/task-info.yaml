@@ -115,9 +115,6 @@ files:
               self.is_valid(next_)
               self.next = next_
     learner_created: false
-  - name: test.py
-    visible: true
-    learner_created: true
 status: Solved
 feedback:
   message: Congratulations!

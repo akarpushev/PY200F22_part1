@@ -12,7 +12,7 @@ class Node:
         """
         self.value = value
 
-        self.next = None # сначала надо проверить - сосед из класса Node, до этого указатель next - None
+        self.next = None # сначала надо проверить - сосед из класса Node, до этого указатель __next - None
         self.set_next(next_)
 
     def __repr__(self) -> str:
