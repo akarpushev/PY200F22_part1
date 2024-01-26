@@ -21,30 +21,28 @@ class Book:
         self.name = name
         self.pages = pages
 
-    def __str__(self):
-        return f"Книга {self.name}"
-
-    def __repr__(self):
-        return f"Book(id_={self.id}, name='{self.name}', pages={self.pages})"
 
 # TODO написать класс Library
 class Library:
     def __init__(self, books: Optional = None):
-        self.books: Optional[Book] = None
+        self.books = []
+        self.books = books
+        #self.head = self.books[0]
 
 
     def get_next_book_id(self):
-        if self.books is None:
-            id_ = 1
+        if self.books:
+            next_id = len(self.books) + 1
         else:
-            id_ += 1
-        return id_
+            next_id = 1
+        return next_id
 
 
-    def get_index_by_book_id(self):
-        if
-        return id_
-
+    def get_index_by_book_id(self, index):
+        if self.books:
+            for book in self.books:
+                if book['id_'] == index:
+                    return book.index
 
 
 if __name__ == '__main__':

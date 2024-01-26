@@ -68,7 +68,7 @@ if __name__ == "__main__":
     linked_list = LinkedList(list_)
     empty_linked_list = LinkedList()
 
-    if linked_list:
+    if linked_list: # if linked_list == True:
         print("Список не пустой")
     else:
         print("Список пустой")

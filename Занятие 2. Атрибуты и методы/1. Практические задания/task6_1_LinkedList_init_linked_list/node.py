@@ -12,7 +12,7 @@ class Node:
         """
         self.value = value
 
-        self.next = None
+        self.next = None # сначала надо проверить - сосед из класса Node, до этого указатель next - None
         self.set_next(next_)
 
     def __repr__(self) -> str:
@@ -21,7 +21,7 @@ class Node:
     def __str__(self) -> str:
         return str(self.value)
 
-    def is_valid(self, node: Any) -> None:
+    def is_valid(self, node: Any) -> None: # сначала надо проверить - сосед из класса Node
         if not isinstance(node, (type(None), Node)):
             raise TypeError
 

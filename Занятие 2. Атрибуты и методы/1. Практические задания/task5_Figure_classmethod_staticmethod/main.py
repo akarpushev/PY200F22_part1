@@ -25,6 +25,7 @@ class TriangleCalculator:
     @staticmethod
     def area_by_height(self, a, h):  # TODO сделать статическим методом
         """ Формула площади по основанию и высоте. """
+        #print(0.5 * a * h)
         return 0.5 * a * h
 
 

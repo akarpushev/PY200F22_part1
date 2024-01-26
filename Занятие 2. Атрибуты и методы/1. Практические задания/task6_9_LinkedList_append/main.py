@@ -50,7 +50,7 @@ class LinkedList:
 
     def append(self, value: Any):
         """ Добавление элемента в конец связного списка. """
-        ...  # TODO реализовать алгоритм добавления узла в конец последовательности
+        # TODO реализовать алгоритм добавления узла в конец последовательности
         append_node = Node(value)
         if self.head is None:
             self.head = append_node

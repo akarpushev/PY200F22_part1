@@ -14,12 +14,30 @@ class Date:
 
     def is_leap_year(self, year: int):
         """Проверяет, является ли год високосным"""
-        ...  # TODO реализовать метод
+        # TODO реализовать метод
+        if year % 4 == 0:
+            result = 2
+        elif year % 100 == 0:
+            if year % 400 == 0:
+                result = 2
+        else:
+            result = 1
+            return result
+
 
     def get_max_day(self, month: int, year: int):
         """Возвращает максимальное количество дней в месяце для указанного года"""
-        ...  # TODO используя атрибут класса DAY_OF_MONTH вернуть количество дней в запрашиваемом месяце и году
+        # TODO используя атрибут класса DAY_OF_MONTH вернуть количество дней в запрашиваемом месяце и году
+        days = Date.DAY_OF_MONTH[self.is_leap_year(year)][month]
+        return days
 
     def is_valid_date(self, day: int, month: int, year: int):
         """Проверяет, является ли дата корректной"""
-        ...  # TODO проверить валидность даты
+        # TODO проверить валидность даты
+        if not 0 < day < self.get_max_day(month, year):
+            raise ValueError
+
+
+if __name__ == "__main__":
+    print(Date.is_valid_date(5, 6, 2024))  #
+

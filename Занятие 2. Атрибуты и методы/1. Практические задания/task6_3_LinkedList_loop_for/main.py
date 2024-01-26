@@ -20,8 +20,6 @@ class LinkedList:
         self.head = self.list_nodes[0]
         self.len = len(self.list_nodes)
         # TODO устанавливаем длину последовательности
-        if not 0 <= index < len(self.list_nodes):
-            raise TypeError
 
         for i in range(len(self.list_nodes) - 1):
             current_node = self.list_nodes[i]
@@ -48,7 +46,8 @@ class LinkedList:
             raise TypeError()
 
         # TODO проверка корректности границ индекса
-
+        if not 0 <= index < self.len:
+            raise IndexError()
         current_node = self.head
         for _ in range(index):
             current_node = current_node.next

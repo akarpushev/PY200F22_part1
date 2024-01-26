@@ -14,14 +14,14 @@ files:
         status: Solved
         encrypted_possible_answer: "...  # TODO инициализировать связный список"
       - offset: 1527
-        length: 75
+        length: 70
         placeholder_text: "...  # TODO реализовать алгоритм добавления узла в конец по\
       следовательности"
         initial_state:
           length: 75
           offset: 1481
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Solved
         encrypted_possible_answer: "...  # TODO реализовать алгоритм добавления узла в\
       \ конец последовательности"
@@ -135,5 +135,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Fri, 19 Jan 2024 16:43:12 UTC"
+  time: "Thu, 25 Jan 2024 12:10:54 UTC"
 record: -1
