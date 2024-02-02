@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 68
-        length: 2121
+        length: 2124
         placeholder_text: |-
           # TODO защитить от модификации атрибуты head, tail, len
           class LinkedList:

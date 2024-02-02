@@ -28,7 +28,8 @@ class Date:
     def get_max_day(self, month: int, year: int):
         """Возвращает максимальное количество дней в месяце для указанного года"""
         # TODO используя атрибут класса DAY_OF_MONTH вернуть количество дней в запрашиваемом месяце и году
-        days = Date.DAY_OF_MONTH[self.is_leap_year(year)][month]
+        x = self.is_leap_year(year)
+        days = Date.DAY_OF_MONTH[x][month]
         return days
 
     def is_valid_date(self, day: int, month: int, year: int):
@@ -37,7 +38,12 @@ class Date:
         if not 0 < day < self.get_max_day(month, year):
             raise ValueError
 
+    def __str__(self):
+        return f"{self.day}.{self.month}.{self.year}"
+
 
 if __name__ == "__main__":
-    print(Date.is_valid_date(5, 6, 2024))  #
+    #print(Date.is_valid_date(5, 6, 2024))
+    date = Date(4, 6, 2024)
+    print(date)
 

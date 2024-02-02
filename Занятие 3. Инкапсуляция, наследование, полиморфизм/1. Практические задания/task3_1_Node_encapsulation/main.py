@@ -33,9 +33,9 @@ class Node:
 if __name__ == "__main__":
     first_node = Node("first_node")
     second_node = Node("second_node")
-    d_node = Node("d_node")
+    #d_node = Node("d_node")
 
     first_node.set_next(second_node)
-    second_node.set_next(d_node)
+    #second_node.set_next(d_node)
 
     print(repr(first_node), repr(second_node))

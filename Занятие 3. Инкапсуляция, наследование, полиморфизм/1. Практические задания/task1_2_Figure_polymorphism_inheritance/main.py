@@ -37,8 +37,11 @@ if __name__ == "__main__":
     fig = Figure()
     fig.area()
 
+
     rect = Rectangle(5, 10)
-    print(rect.area())
+    rect.area()
+    #print(rect.area())
 
     circle = Circle(5)
-    print(circle.area())
+    circle.area()
+    #print(circle.area())
